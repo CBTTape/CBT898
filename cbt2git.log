@@ -1,0 +1,24 @@
+2023-08-06 08:18:49.892270 - Initialized conversion of CBT898
+2023-08-06 08:19:00.955281 - Received CBT.V505.FILE898.PDS from FILE898.XMI 
+2023-08-06 08:19:09.610765 - Found $$.xmi (application/xmit) in CBT.V505.FILE898.PDS
+2023-08-06 08:19:10.555464   - Received to CBT898/AKOS.$$
+2023-08-06 08:19:10.557073 - Found $$$#DATE.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/$$$#DATE
+2023-08-06 08:19:10.558302 - Found $$$INDEX.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/$$$INDEX
+2023-08-06 08:19:10.559320 - Found $$MEM.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/$$MEM
+2023-08-06 08:19:10.560385 - Found $$NOTE01.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/$$NOTE01
+2023-08-06 08:19:10.561318 - Found $$README.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/$$README
+2023-08-06 08:19:10.884809 - Found $LOAD.xmi (application/xmit) in CBT.V505.FILE898.PDS
+2023-08-06 08:19:11.013181   - Received RECFM=U data, stored XMIT file as CBT898/$LOAD.xmi
+2023-08-06 08:19:11.014220 - Found @@MEMBER.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/@@MEMBER
+2023-08-06 08:19:11.015254 - Found @FILE898.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/@FILE898
+2023-08-06 08:19:14.038364 - Found ASM.xmi (application/xmit) in CBT.V505.FILE898.PDS
+2023-08-06 08:19:14.355579   - Received to CBT898/AKOS.ASM
+2023-08-06 08:19:14.356905 - Found ASMMEM.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/ASMMEM
+2023-08-06 08:19:15.138653 - Found DB2UTILS.xmi (application/xmit) in CBT.V505.FILE898.PDS
+2023-08-06 08:19:15.238069   - Received to CBT898/DB2.UTILS
+2023-08-06 08:19:15.239264 - Found DB2UTMEM.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/DB2UTMEM
+2023-08-06 08:19:16.919618 - Found DSECT.xmi (application/xmit) in CBT.V505.FILE898.PDS
+2023-08-06 08:19:17.110428   - Received to CBT898/AKOS.DSECT
+2023-08-06 08:19:17.861218 - Found MACLIB.xmi (application/xmit) in CBT.V505.FILE898.PDS
+2023-08-06 08:19:17.936012   - Received to CBT898/AKOS.MACLIB
+2023-08-06 08:19:17.937168 - Found MACLIMEM.txt (text/plain) in CBT.V505.FILE898.PDS, moved to PDS/MACLIMEM

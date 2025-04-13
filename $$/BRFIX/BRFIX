@@ -1,0 +1,23 @@
+//KARAAP JOB ACCT,'EDITPDS',NOTIFY=&SYSUID,
+//            MSGCLASS=Z,CLASS=A
+//********************************************************************
+//*
+//* Change all occurences of a character string(s) in a PDS
+//*
+//********************************************************************
+//*
+//UPDTEPRC EXEC PGM=PDSEDIT,REGION=2048K
+//STEPLIB  DD DISP=SHR,DSN=KARAA.$LOAD              <--- RECEIVED into
+//SYSPRINT DD SYSOUT=T
+//SYSOUT   DD SYSOUT=T
+//*SYSOUT   DD SYSOUT=Z
+//SYSUT1   DD DISP=SHR,DSN=KARAA.$$                 <--- Your REXX
+//SYSIN    DD DATA,DLM=$$
+PDS IN(SYSUT1)
+C  /=BR(/=$Br(/
+C  /=Br(/=$Br(/
+C  /=br(/=$Br(/
+C  / BR(/ $Br(/
+C  / Br(/ $Br(/
+C  / br(/ $Br(/
+$$

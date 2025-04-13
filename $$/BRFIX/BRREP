@@ -1,0 +1,25 @@
+//KARAAP JOB ACCT,'EDITPDS',NOTIFY=&SYSUID,
+//            MSGCLASS=Z,CLASS=A
+//********************************************************************
+//*
+//* Find all occurences of a character string(s) in a PDS
+//*
+//********************************************************************
+//*
+//UPDTEPRC EXEC PGM=PDSEDIT,REGION=2048K
+//STEPLIB  DD DISP=SHR,DSN=KARAA.$LOAD
+//SYSPRINT DD SYSOUT=T
+//SYSOUT   DD SYSOUT=T
+//*SYSOUT   DD SYSOUT=Z
+//SYSUT1   DD DISP=SHR,DSN='KARAA.$$',
+//*           VOL=SER=BTS217,                  <--- If uncataloged
+//            UNIT=SYSALLDA
+//SYSIN    DD DATA,DLM=$$
+PDS IN(SYSUT1)
+F  /=BR(/
+F  /=Br(/
+F  /=br(/
+F  / BR(/
+F  / Br(/
+F  / br(/
+$$

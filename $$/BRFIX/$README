@@ -1,0 +1,25 @@
+Use PDSEDIT to change all occurances of "BR(" to "$BR(" for sites that
+already use "BR" to browse datasets as a load module in the ISPLLIB
+concatenation.
+
+Members:
+--------
+  $README  - Duh!!!
+  BRFIX    - Batch JCL to do Global change.
+  BRREP    - Batch JCL to do Global report.
+  PDSDOCO  - Original PDSEDIT doco.
+  PDSEDITL - XMITed PDSEDIT load module.
+
+Fix procedure:
+--------------
+1. Receive SPFEDITL into any loadlib (let receive create it's own).
+2. Modify JCL BRFIX to point to above loadlib and point to appropriate
+   REXX PDS that may use the BR command.
+   Submit JCL.
+3. For some reason SPFEDIT reports line overflow (which does not seem
+   correct), however look for the following eye catcher in the SDSF
+   output:
+       PDE0118  LINE OVERFLOW IN
+   For those members you will need to manually modify "BR(" to "$BR(".
+4. Set up $BR as an alias to BR (or copy BR into $BR, however, alias
+   is better as it will be controlled by the system).
